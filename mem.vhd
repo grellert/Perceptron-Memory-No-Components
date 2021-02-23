@@ -18,11 +18,11 @@ architecture Behavioral of mem is
 
 signal ram: ram_type;
 signal read_address: std_logic_vector(bits-1 downto 0);
-signal x: natural:= 0;
+signal x: natural:= 0; --variable to reset memory only on the first time/ other risign_edge(resets) are for other components
 
 begin
 
-process(RST, CLK, we)
+process(RST, CLK, we, x)
 begin
 	if(RST = '1' and x = 0 ) then -- se reset = 1
 		--for i in (-LINES_MEM/2) to ((LINES_MEM/2) - 1) loop --loop de 0 a 63 (LINES_MEM)

@@ -1,5 +1,5 @@
 Flow report for NN_Neuron
-Tue Jan 12 10:47:49 2021
+Fri Feb 19 16:26:13 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,21 +40,21 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Jan 12 10:47:49 2021           ;
+; Flow Status                        ; Successful - Fri Feb 19 16:26:13 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; NN_Neuron                                       ;
-; Top-level Entity Name              ; top_no_components                               ;
+; Top-level Entity Name              ; top_no_comp_python_4                            ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 2,769 / 33,216 ( 8 % )                          ;
-;     Total combinational functions  ; 1,777 / 33,216 ( 5 % )                          ;
-;     Dedicated logic registers      ; 2,082 / 33,216 ( 6 % )                          ;
-; Total registers                    ; 2082                                            ;
-; Total pins                         ; 101 / 475 ( 21 % )                              ;
+; Total logic elements               ; 2,705 / 33,216 ( 8 % )                          ;
+;     Total combinational functions  ; 1,744 / 33,216 ( 5 % )                          ;
+;     Dedicated logic registers      ; 2,090 / 33,216 ( 6 % )                          ;
+; Total registers                    ; 2090                                            ;
+; Total pins                         ; 109 / 475 ( 23 % )                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
-; Embedded Multiplier 9-bit elements ; 1 / 70 ( 1 % )                                  ;
+; Embedded Multiplier 9-bit elements ; 4 / 70 ( 6 % )                                  ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
 +------------------------------------+-------------------------------------------------+
 
@@ -64,30 +64,81 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/12/2021 10:46:55 ;
+; Start date & time ; 02/19/2021 16:24:31 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; NN_Neuron           ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                 ;
-+-------------------------------------+---------------------------------------+---------------+-------------------+----------------+
-; Assignment Name                     ; Value                                 ; Default Value ; Entity Name       ; Section Id     ;
-+-------------------------------------+---------------------------------------+---------------+-------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 31032330796986.161045921411420        ; --            ; --                ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --                ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --                ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --                ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --                ; --             ;
-; PARTITION_COLOR                     ; 16764057                              ; --            ; top_no_components ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; top_no_components ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; top_no_components ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --                ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --                ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --                ; --             ;
-; TOP_LEVEL_ENTITY                    ; top_no_components                     ; NN_Neuron     ; --                ; --             ;
-+-------------------------------------+---------------------------------------+---------------+-------------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                       ;
++--------------------------------------+---------------------------------------+---------------+----------------------+------------------+
+; Assignment Name                      ; Value                                 ; Default Value ; Entity Name          ; Section Id       ;
++--------------------------------------+---------------------------------------+---------------+----------------------+------------------+
+; COMPILER_SIGNATURE_ID                ; 31032330796986.161376267022268        ; --            ; --                   ; --               ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --                   ; rom_tb           ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --                   ; top_tb3          ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --                   ; top_tb3_new      ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --                   ; top_tb_python    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --                   ; top_tb_python_4  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --                   ; top_tb_python_20 ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --                   ; top_tb_python_40 ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; top_tb_python_20                      ; --            ; --                   ; eda_simulation   ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                  ; --            ; --                   ; eda_simulation   ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                ; <None>        ; --                   ; --               ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --                   ; eda_simulation   ;
+; EDA_TEST_BENCH_FILE                  ; tb_rom.vhd                            ; --            ; --                   ; rom_tb           ;
+; EDA_TEST_BENCH_FILE                  ; top_tb3.vhd                           ; --            ; --                   ; top_tb3          ;
+; EDA_TEST_BENCH_FILE                  ; top_tb3_new.vhd                       ; --            ; --                   ; top_tb3_new      ;
+; EDA_TEST_BENCH_FILE                  ; top_tb_python.vhd                     ; --            ; --                   ; top_tb_python    ;
+; EDA_TEST_BENCH_FILE                  ; python_vhds/n_4/top_tb_python_4.vhd   ; --            ; --                   ; top_tb_python_4  ;
+; EDA_TEST_BENCH_FILE                  ; python_vhds/n_20/top_tb_python_20.vhd ; --            ; --                   ; top_tb_python_20 ;
+; EDA_TEST_BENCH_FILE                  ; python_vhds/n_40/top_tb_python_40.vhd ; --            ; --                   ; top_tb_python_40 ;
+; EDA_TEST_BENCH_MODULE_NAME           ; rom_tb                                ; --            ; --                   ; rom_tb           ;
+; EDA_TEST_BENCH_MODULE_NAME           ; top_tb3                               ; --            ; --                   ; top_tb3          ;
+; EDA_TEST_BENCH_MODULE_NAME           ; top_tb3_new                           ; --            ; --                   ; top_tb3_new      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; top_tb_python                         ; --            ; --                   ; top_tb_python    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; top_tb_python_4                       ; --            ; --                   ; top_tb_python_4  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; top_tb_python_20                      ; --            ; --                   ; top_tb_python_20 ;
+; EDA_TEST_BENCH_MODULE_NAME           ; top_tb_python_40                      ; --            ; --                   ; top_tb_python_40 ;
+; EDA_TEST_BENCH_NAME                  ; rom_tb                                ; --            ; --                   ; eda_simulation   ;
+; EDA_TEST_BENCH_NAME                  ; top_tb3                               ; --            ; --                   ; eda_simulation   ;
+; EDA_TEST_BENCH_NAME                  ; top_tb3_new                           ; --            ; --                   ; eda_simulation   ;
+; EDA_TEST_BENCH_NAME                  ; top_tb_python                         ; --            ; --                   ; eda_simulation   ;
+; EDA_TEST_BENCH_NAME                  ; top_tb_python_4                       ; --            ; --                   ; eda_simulation   ;
+; EDA_TEST_BENCH_NAME                  ; top_tb_python_20                      ; --            ; --                   ; eda_simulation   ;
+; EDA_TEST_BENCH_NAME                  ; top_tb_python_40                      ; --            ; --                   ; eda_simulation   ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 10 us                                 ; --            ; --                   ; rom_tb           ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 5 us                                  ; --            ; --                   ; top_tb3          ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 10 us                                 ; --            ; --                   ; top_tb3_new      ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 10 us                                 ; --            ; --                   ; top_tb_python    ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 10 us                                 ; --            ; --                   ; top_tb_python_4  ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 10 us                                 ; --            ; --                   ; top_tb_python_20 ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 10 us                                 ; --            ; --                   ; top_tb_python_40 ;
+; IP_TOOL_NAME                         ; ROM: 1-PORT                           ; --            ; --                   ; --               ;
+; IP_TOOL_NAME                         ; ROM: 1-PORT                           ; --            ; --                   ; --               ;
+; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --                   ; --               ;
+; IP_TOOL_VERSION                      ; 13.0                                  ; --            ; --                   ; --               ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --                   ; --               ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --                   ; --               ;
+; MISC_FILE                            ; rom_1_port.bsf                        ; --            ; --                   ; --               ;
+; MISC_FILE                            ; rom_1_port_inst.vhd                   ; --            ; --                   ; --               ;
+; MISC_FILE                            ; rom_1_port.inc                        ; --            ; --                   ; --               ;
+; MISC_FILE                            ; rom_1_port.cmp                        ; --            ; --                   ; --               ;
+; MISC_FILE                            ; rom_1_port_syn.v                      ; --            ; --                   ; --               ;
+; MISC_FILE                            ; rom_1_port_v2.bsf                     ; --            ; --                   ; --               ;
+; MISC_FILE                            ; rom_1_port_v2_inst.vhd                ; --            ; --                   ; --               ;
+; MISC_FILE                            ; rom_1_port_v2.inc                     ; --            ; --                   ; --               ;
+; MISC_FILE                            ; rom_1_port_v2.cmp                     ; --            ; --                   ; --               ;
+; MISC_FILE                            ; rom_1_port_v2_syn.v                   ; --            ; --                   ; --               ;
+; PARTITION_COLOR                      ; 16764057                              ; --            ; top_no_comp_python_4 ; Top              ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; top_no_comp_python_4 ; Top              ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; top_no_comp_python_4 ; Top              ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --            ; --                   ; --               ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --                   ; --               ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --            ; --                   ; --               ;
+; TOP_LEVEL_ENTITY                     ; top_no_comp_python_4                  ; NN_Neuron     ; --                   ; --               ;
++--------------------------------------+---------------------------------------+---------------+----------------------+------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -95,12 +146,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 4641 MB             ; 00:00:09                           ;
-; Fitter                    ; 00:00:31     ; 1.0                     ; 4903 MB             ; 00:00:31                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4567 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4593 MB             ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4545 MB             ; 00:00:02                           ;
-; Total                     ; 00:00:50     ; --                      ; --                  ; 00:00:48                           ;
+; Analysis & Synthesis      ; 00:00:17     ; 1.0                     ; 4650 MB             ; 00:00:13                           ;
+; Fitter                    ; 00:00:59     ; 1.0                     ; 4908 MB             ; 00:00:45                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 4567 MB             ; 00:00:04                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 4591 MB             ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:07     ; 1.0                     ; 4545 MB             ; 00:00:04                           ;
+; Total                     ; 00:01:33     ; --                      ; --                  ; 00:01:09                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

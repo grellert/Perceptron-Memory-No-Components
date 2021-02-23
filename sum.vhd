@@ -20,16 +20,17 @@ architecture behavior of sum is
 	signal sum_all : std_logic_vector((bits)-1 downto 0);
 	--signal sdx,n : std_logic_vector(bits-1 downto 0);
 	--constant dx : real:= 0.046875;
-	signal sx1, sx2, sx3, sw1, sw2, sw3: std_logic_vector(bits_half-1 downto 0);
+	signal sx1, sx2, sx3: std_logic_vector(bits_half-1 downto 0); --**************
+	signal sw1, sw2, sw3: std_logic_vector(bits_half-1 downto 0); --**************
 	signal sbias: std_logic_vector(bits-1 downto 0);
 	
 begin
-sx1<= x1;
-sx2<= x2;
-sx3<= x3;
-sw1<= w1;
-sw2<= w2;
-sw3<= w3;
+sx1<= x1; --**************
+sx2<= x2;--**************
+sx3<= x3;--**************
+sw1<= w1;--**************
+sw2<= w2;--**************
+sw3<= w3;--**************
 sbias<= bias;
 
 process(reset, clk, we)
@@ -41,8 +42,7 @@ begin
 	else
 		if(clk'event and clk = '1') then --se tem evento de clock
 		if(we = '0') then --write enable =1 
-			--sum_all <= std_logic_vector(unsigned(unsigned(sx1)*unsigned(sw1))+unsigned(unsigned(sx2)*unsigned(sw2))+unsigned(unsigned(sx3)*unsigned(sw3)) + unsigned(sbias));
-			sum_all <= std_logic_vector((unsigned(sx1)*unsigned(sw1))+(unsigned(sx2)*unsigned(sw2))+(unsigned(sx3)*unsigned(sw3)) + unsigned(sbias));
+			sum_all <= std_logic_vector((unsigned(sx1)*unsigned(sw1))+(unsigned(sx2)*unsigned(sw2))+(unsigned(sx3)*unsigned(sw3)) + unsigned(sbias));--**************
 			output<= sum_all;
 			pronto <= '1';
 		end if;
@@ -50,5 +50,4 @@ begin
 	end if;
 end process;
 
---sum_all <= ((x1)*(w1))+((x2)*(w2))+((x3)*(w3)) + bias;
 end behavior;

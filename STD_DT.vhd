@@ -19,14 +19,15 @@ constant zero_ones_2x: std_logic_vector ((bits*2)-1 downto 0):=((bits) => '1', o
 constant zeros: std_logic_vector (bits-1 downto 0):=(others => '0'); --"0000..."
 constant zeros2: std_logic_vector ((bits*2)-1 downto 0):=(others => '0'); --"0000..."
 constant valor1: std_logic_vector (bits-1 downto 0):=(0=>'1',others => '0'); --"0000..."
-constant clk_period: time := 20 ns;
+constant clk_period: time := 60 ns;
 
---constant input_bit: integer:= WIDTH_FEAT*2+1;
---constant dx : std_logic_vector(bits-1 downto 0);
 constant LINES_MEM: natural := 256;
-constant BITS_ADDR: integer := 6;
---type ram_type is array (0 to LINES_MEM-1) of STD_LOGIC_VECTOR(bits-1 downto 0);
 type ram_type is array (0 to (LINES_MEM-1)) of std_logic_vector(bits-1 downto 0);
+
+--type inputs_array is array (integer range <>) of std_logic_vector (-1 downto 0); '<>' makes it generic for another vhd_variable
+type inputs_array_type is array (natural range <>) of std_logic_vector (4-1 downto 0);
+type array_type_8b is array (natural range <>) of std_logic_vector (8-1 downto 0);
+
 
 end STD_DT;
 

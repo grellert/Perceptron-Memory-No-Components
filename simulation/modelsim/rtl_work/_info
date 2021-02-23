@@ -2,26 +2,26 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\luisa\Documents\Materias\UFSC\20201\Lab-EBD_ECL\NN_Neuron_unsigned_no_components\simulation\modelsim
+Z0 dC:\Users\luisa\Documents\Materias\UFSC\20201\Lab_EBD_ECL\Perpeptron\NN_Neuron_unsigned_no_components_generic_inputs_python\simulation\modelsim
 Emem
-Z1 w1610411622
-Z2 DPx4 work 6 std_dt 0 22 ;5h7l0f29];NL@mn8On_I3
+Z1 w1613417867
+Z2 DPx4 work 6 std_dt 0 22 8hm`KmK1fi[Al3m7j:iXW0
 Z3 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z4 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
 Z5 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
 Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z8 dC:\Users\luisa\Documents\Materias\UFSC\20201\Lab-EBD_ECL\NN_Neuron_unsigned_no_components\simulation\modelsim
-Z9 8C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/mem.vhd
-Z10 FC:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/mem.vhd
+Z8 dC:\Users\luisa\Documents\Materias\UFSC\20201\Lab_EBD_ECL\Perpeptron\NN_Neuron_unsigned_no_components_generic_inputs_python\simulation\modelsim
+Z9 8C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/mem.vhd
+Z10 FC:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/mem.vhd
 l0
 L7
 VDR103oc9QzbiLC8Q[c]oo3
 Z11 OV;C;10.1d;51
 31
-Z12 !s108 1610459436.553000
-Z13 !s90 -reportprogress|300|-93|-work|work|C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/mem.vhd|
-Z14 !s107 C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/mem.vhd|
+Z12 !s108 1613604513.990000
+Z13 !s90 -reportprogress|300|-93|-work|work|C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/mem.vhd|
+Z14 !s107 C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/mem.vhd|
 Z15 o-93 -work work -O0
 Z16 tExplicit 1
 !s100 >^BGRcIH9Eg?_>R9fQ0Qc0
@@ -36,7 +36,7 @@ R7
 DEx4 work 3 mem 0 22 DR103oc9QzbiLC8Q[c]oo3
 l23
 L17
-V34O1C9eFMc_nm;g5WLdBJ3
+V5W>FlEa]j?IZFJ:g[14nZ1
 R11
 31
 R12
@@ -44,7 +44,7 @@ R13
 R14
 R15
 R16
-!s100 fU3@Nl859JCX;nS1nCmRZ2
+!s100 kzPmiSUYa2HVQ>UgzC?2Q2
 !i10b 1
 Eregistrador
 Z17 w1610413080
@@ -55,20 +55,20 @@ R5
 R6
 R7
 R8
-Z18 8C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/registrador.vhd
-Z19 FC:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/registrador.vhd
+Z18 8C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/registrador.vhd
+Z19 FC:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/registrador.vhd
 l0
 L6
 VJPTljIQbLBEG`QBb<aK0d2
-!s100 XOH=R[R;bIW2TR5I;`_>Q0
 R11
 31
-!i10b 1
-Z20 !s108 1610459437.214000
-Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/registrador.vhd|
-Z22 !s107 C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/registrador.vhd|
+Z20 !s108 1613604514.212000
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/registrador.vhd|
+Z22 !s107 C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/registrador.vhd|
 R15
 R16
+!s100 XOH=R[R;bIW2TR5I;`_>Q0
+!i10b 1
 Aestrutura
 R3
 R2
@@ -80,37 +80,37 @@ DEx4 work 11 registrador 0 22 JPTljIQbLBEG`QBb<aK0d2
 l13
 L12
 VFg3`9[iYF<ZcOz;2CZ1gR1
-!s100 lWWNmUPS5:POPP;oR7ZMd0
 R11
 31
-!i10b 1
 R20
 R21
 R22
 R15
 R16
+!s100 lWWNmUPS5:POPP;oR7ZMd0
+!i10b 1
 Pstd_dt
 R3
 R4
 R5
 R6
 R7
-Z23 w1610390822
+Z23 w1613418307
 R8
-Z24 8C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/STD_DT.vhd
-Z25 FC:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/STD_DT.vhd
+Z24 8C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/STD_DT.vhd
+Z25 FC:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/STD_DT.vhd
 l0
 L7
-V;5h7l0f29];NL@mn8On_I3
+V8hm`KmK1fi[Al3m7j:iXW0
 R11
 31
 b1
-Z26 !s108 1610459436.340000
-Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/STD_DT.vhd|
-Z28 !s107 C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/STD_DT.vhd|
+Z26 !s108 1613604513.357000
+Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/STD_DT.vhd|
+Z28 !s107 C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/STD_DT.vhd|
 R15
 R16
-!s100 NB?JXGdzR@3nkX^NSEQ:b1
+!s100 c0b5c0Kz2doUYe=WeCMI_3
 !i10b 1
 Bbody
 R2
@@ -120,7 +120,7 @@ R5
 R6
 R7
 l0
-L33
+L34
 VT8f4o=ZK6j;?:Uc1@2WbC2
 R11
 31
@@ -130,10 +130,10 @@ R28
 R15
 R16
 nbody
-!s100 G4MQAG`XRDYEI^L:`OL^93
+!s100 XKl>YiWV2Q`DdMNM>]FA:0
 !i10b 1
-Esum
-Z29 w1610154910
+Esum_python_4
+Z29 w1613603397
 R2
 Z30 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
 R3
@@ -142,19 +142,19 @@ R5
 R6
 R7
 R8
-Z31 8C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/sum.vhd
-Z32 FC:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/sum.vhd
+Z31 8C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/python_vhds/n_4/sum_python_4.vhd
+Z32 FC:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/python_vhds/n_4/sum_python_4.vhd
 l0
-L8
-V7zjg_B77imR59OERL8L7n2
+L7
+VNIdoARh`7j`[j8gMiO6860
 R11
 31
-Z33 !s108 1610459436.770000
-Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/sum.vhd|
-Z35 !s107 C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/sum.vhd|
+Z33 !s108 1613604513.789000
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/python_vhds/n_4/sum_python_4.vhd|
+Z35 !s107 C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/python_vhds/n_4/sum_python_4.vhd|
 R15
 R16
-!s100 3Zbe=5>J8^DD^0gKhIGNA2
+!s100 W=F9e_P40`94JJIzAi^:K1
 !i10b 1
 Abehavior
 R2
@@ -164,10 +164,10 @@ R4
 R5
 R6
 R7
-DEx4 work 3 sum 0 22 7zjg_B77imR59OERL8L7n2
-l26
-L19
-VXJC4=4=Sk4gc_d4[YVjX`1
+DEx4 work 12 sum_python_4 0 22 NIdoARh`7j`[j8gMiO6860
+l24
+L18
+Va22JXSU>IbId>dhz@8U3j1
 R11
 31
 R33
@@ -175,10 +175,10 @@ R34
 R35
 R15
 R16
-!s100 c^JP><N_9U]BT5<Rc;CV10
+!s100 _QWHi7;=@U>ak:3^``^Ql2
 !i10b 1
-Etop_no_components
-Z36 w1610459212
+Etop_no_comp_python_4
+Z36 w1613603658
 R2
 R4
 R5
@@ -186,19 +186,19 @@ R7
 R6
 R3
 R8
-Z37 8C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/top_no_components.vhd
-Z38 FC:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/top_no_components.vhd
+Z37 8C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/python_vhds/n_4/top_no_comp_python_4.vhd
+Z38 FC:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/python_vhds/n_4/top_no_comp_python_4.vhd
 l0
-L8
-VAWI5FRWO8E=mId`^h`S6z3
+L7
+VhPgXFZgLSOzlCLCUUX1^]3
 R11
 31
-Z39 !s108 1610459436.998000
-Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/top_no_components.vhd|
-Z41 !s107 C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/top_no_components.vhd|
+Z39 !s108 1613604513.573000
+Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/python_vhds/n_4/top_no_comp_python_4.vhd|
+Z41 !s107 C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/python_vhds/n_4/top_no_comp_python_4.vhd|
 R15
 R16
-!s100 3Dog<6V2hKoXiMH8KMLic3
+!s100 Za^WhP@XPKzDC22JoLlUj3
 !i10b 1
 Abehavior
 R2
@@ -207,10 +207,10 @@ R5
 R7
 R6
 R3
-DEx4 work 17 top_no_components 0 22 AWI5FRWO8E=mId`^h`S6z3
-l60
-L26
-VU`8GW4AoiJ8[Pm4V_UmQ_0
+DEx4 work 20 top_no_comp_python_4 0 22 hPgXFZgLSOzlCLCUUX1^]3
+l58
+L25
+VTWFc3j[l;VDbZQKRcEOK>2
 R11
 31
 R39
@@ -218,5 +218,29 @@ R40
 R41
 R15
 R16
-!s100 Kh;4z>404]YSE325_SR231
+!s100 EJMRYKS`DPDTFe83a?NRf3
 !i10b 1
+Etop_tb_python
+w1613602564
+R4
+R5
+R2
+DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R3
+R6
+R7
+R8
+8C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/top_tb_python.vhd
+FC:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/top_tb_python.vhd
+l0
+L8
+V?6LGaz=CCjedhi<hGYA2>3
+!s100 nI3?R=7KS<Ed5=O6J;0W90
+R11
+31
+!i10b 1
+!s108 1613604514.413000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/top_tb_python.vhd|
+!s107 C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/top_tb_python.vhd|
+R15
+R16

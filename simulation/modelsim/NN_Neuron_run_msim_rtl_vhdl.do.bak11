@@ -5,9 +5,17 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/STD_DT.vhd}
-vcom -93 -work work {C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/mem.vhd}
-vcom -93 -work work {C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/sum.vhd}
-vcom -93 -work work {C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/top_no_components.vhd}
-vcom -93 -work work {C:/Users/luisa/Documents/Materias/UFSC/20201/Lab-EBD_ECL/NN_Neuron_unsigned_no_components/registrador.vhd}
+vcom -93 -work work {C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/STD_DT.vhd}
+vcom -93 -work work {C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/mem.vhd}
+vcom -93 -work work {C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/registrador.vhd}
+vcom -93 -work work {C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/sum_python.vhd}
+vcom -93 -work work {C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/top_no_comp_python.vhd}
 
+vcom -93 -work work {C:/Users/luisa/Documents/Materias/UFSC/20201/Lab_EBD_ECL/Perpeptron/NN_Neuron_unsigned_no_components_generic_inputs_python/top_tb_python.vhd}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  top_tb_python
+
+add wave *
+view structure
+view signals
+run 10 us

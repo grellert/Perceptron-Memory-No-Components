@@ -9,20 +9,17 @@ entity top_tb3 is
 end top_tb3;
 
 architecture tb of top_tb3 is --clk,reset,inicio,we,x1,x2,x3,w1,w2,w3,bias,datain,y
-	--constant clk_period: time := 20 ns;
 	signal clk, reset,we,spronto_sum_out: std_logic;
-	signal x1,x2,x3,w1,w2,w3: std_logic_vector(bits_half-1 downto 0);
+	signal x1,x2,x3,w1,w2,w3: std_logic_vector(bits-1 downto 0);
 	signal bias,datain,y: std_logic_vector(bits-1 downto 0);
-	--signal val_y: std_logic_vector(bits-1 downto 0);
 	signal sum_result_out,RAM_out: std_logic_vector((bits)-1 downto 0);
-	signal mult_result_out, div_result_out: std_logic_vector((bits*2)-1 downto 0);
 	constant sigmoid_read_time: time := 16*clk_period;
 	signal pronto_geral: std_logic;
 
 begin
-	--Â conectandoÂ osÂ sinaisÂ doÂ testÂ benchÂ aosÂ sinaisÂ doÂ contador
+	--conectando os sinais do test bench aos sinais do contador
 	UUT: entity work.top_no_components port map
-		(clk=>clk,reset=>reset,we=>we,x1=>x1,x2=>x2,x3=>x3,w1=>w1,w2=>w2,w3=>w3,bias=>bias,datain=>datain,y=>y,sum_result_out=>sum_result_out,RAM_out=>RAM_out,spronto_sum_out=>spronto_sum_out,mult_result_out=>mult_result_out,div_result_out=>div_result_out,pronto_geral=>pronto_geral);--RAM_out,mult_result_out, div_result
+		(clk=>clk,reset=>reset,we=>we,x1=>x1,x2=>x2,x3=>x3,w1=>w1,w2=>w2,w3=>w3,bias=>bias,datain=>datain,y=>y,sum_result_out=>sum_result_out,RAM_out=>RAM_out,spronto_sum_out=>spronto_sum_out,pronto_geral=>pronto_geral);--RAM_out,mult_result_out, div_result
 		--clk,reset,inicio,we,x1,x2,x3,w1,w2,w3,bias,datain,y,sum_result_out,RAM_out,spronto_sum_out,mult_result_out, div_result,inicio_mult, pronto_mult, inicio_div,pronto_div
 		
 		
@@ -31,14 +28,14 @@ begin
 	
 	--inicio <= '0', '1' after (sigmoid_read_time+clk_period);
 	
-	--Â processoÂ geradorÂ deÂ clock
+	--processo gerador de clock
 	clk_gen : process
-	constant period: time := 20 ns;
+	--constant period: time := 20 ns;
 	begin
 		clk <= '0';
-		wait for period/2; --Â 50%Â doÂ periodoÂ praÂ cadaÂ nivel
+		wait for clk_period/2; -- 50% do periodo pra cada nivel
 		clk <= '1';
-		wait for period/2;
+		wait for clk_period/2;
 	end process;
 	
 
@@ -57,21 +54,21 @@ begin
 
 		variable val_address, val_datain: std_logic_vector(bits-1 downto 0);
 		
-		variable val_x1, val_x2, val_x3: std_logic_vector(bits_half-1 downto 0);
-		variable val_w1, val_w2, val_w3: std_logic_vector(bits_half-1 downto 0);
+		variable val_x1,val_x2,val_x3: std_logic_vector(bits-1 downto 0);
+		variable val_w1,val_w2,val_w3: std_logic_vector(bits-1 downto 0);
 		
 		variable val_bias: std_logic_vector(bits-1 downto 0);
 		variable val_SPACE: character; -- espaÃ§os da leitura de cada linha de entrada
 		
 		begin
 			--arquivo de entrada do tb
-			file_open(input_buf, "C:\Users\luisa\Documents\Materias\Ufsc\20201\Lab-EBD_ECL\NN_Neuron\text_files\c__data_df_inputs_bin.txt",  read_mode);
+			file_open(input_buf, "C:\Users\luisa\Documents\Materias\UFSC\20201\Lab_EBD_ECL\Perpeptron\NN_Neuron_unsigned_no_components_generic_inputs_python\text_files\c__data_df_inputs_bin.txt",  read_mode);
 			
 			--arquivo de enderecos e valores da sigmoide
-			file_open(sigmoid_buf, "C:\Users\luisa\Documents\Materias\Ufsc\20201\Lab-EBD_ECL\NN_Neuron\text_files\c__data_df_sigmoid_bin.txt",  read_mode); 
+			file_open(sigmoid_buf, "C:\Users\luisa\Documents\Materias\UFSC\20201\Lab_EBD_ECL\Perpeptron\NN_Neuron_unsigned_no_components_generic_inputs_python\text_files\c__data_df_sigmoid_bin.txt",  read_mode); 
 
 			--arquivo de saí­da do tb
-			file_open(output_buf, "C:\Users\luisa\Documents\Materias\Ufsc\20201\Lab-EBD_ECL\NN_Neuron\text_files\saidas_tb.txt",  write_mode);
+			file_open(output_buf, "C:\Users\luisa\Documents\Materias\UFSC\20201\Lab_EBD_ECL\Perpeptron\NN_Neuron_unsigned_no_components_generic_inputs_python\text_files\saidas_tb.txt",  write_mode);
 			wait until reset = '0'; -- espera reset desligar
 			
 	--INICIO IF
