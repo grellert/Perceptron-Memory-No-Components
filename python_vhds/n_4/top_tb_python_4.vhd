@@ -9,7 +9,7 @@ entity top_tb_python_4 is
 end top_tb_python_4;  
 
 architecture tb of top_tb_python_4 is   
-	signal clk, reset,we,spronto_sum_out: std_logic;  
+	signal clk, reset,spronto_sum_out: std_logic;  
    signal x1,x2,x3,x4: std_logic_vector(8-1 downto 0); --signal 
    signal w1,w2,w3,w4: std_logic_vector(8-1 downto 0); --signal 
    signal bias,datain,y: std_logic_vector(bits-1 downto 0);
@@ -20,11 +20,10 @@ architecture tb of top_tb_python_4 is
 begin
 	--conectando os sinais do test bench aos sinais do contador
 	UUT: entity work.top_no_comp_python_4 port map 
-(clk=>clk,reset=>reset,we=>we,x1=>x1,x2=>x2,x3=>x3,x4=>x4,w1=>w1,w2=>w2,w3=>w3,w4=>w4,bias=>bias,datain=>datain,y=>y,sum_result_out=>sum_result_out,RAM_out=>RAM_out,spronto_sum_out=>spronto_sum_out,pronto_geral=>pronto_geral);--RAM_out,mult_result_out, div_result		
+(clk=>clk,reset=>reset,x1=>x1,x2=>x2,x3=>x3,x4=>x4,w1=>w1,w2=>w2,w3=>w3,w4=>w4,bias=>bias,datain=>datain,y=>y,sum_result_out=>sum_result_out,RAM_out=>RAM_out,spronto_sum_out=>spronto_sum_out,pronto_geral=>pronto_geral);--RAM_out,mult_result_out, div_result		
 
 
    reset <= '1', '0' after clk_period/2, '1' after (sigmoid_read_time+clk_period), '0' after (sigmoid_read_time+clk_period+clk_period);
-	we <= '1', '0' after sigmoid_read_time;
 		
 	--processo gerador de clock
 	clk_gen : process
@@ -60,29 +59,11 @@ begin
 		
 		begin
 			--arquivo de entrada do tb
-			file_open(input_buf, "C:\Users\luisa\Documents\Materias\UFSC\20201\Lab_EBD_ECL\Perpeptron\NN_Neuron_unsigned_no_components_generic_inputs_python\text_files\c__data_df_inputs_bin.txt",  read_mode);
-			
-			--arquivo de enderecos e valores da sigmoide
-			file_open(sigmoid_buf, "C:\Users\luisa\Documents\Materias\UFSC\20201\Lab_EBD_ECL\Perpeptron\NN_Neuron_unsigned_no_components_generic_inputs_python\text_files\c__data_df_sigmoid_bin.txt",  read_mode); 
+			file_open(input_buf, "C:\Users\luisa\Documents\Materias\UFSC\20201\Lab_EBD_ECL\Perpeptron\NN_Neuron_unsigned_no_components_generic_inputs_python_ROM\text_files\c__data_df_inputs_bin.txt",  read_mode);
 
 			--arquivo de saí­da do tb
-			file_open(output_buf, "C:\Users\luisa\Documents\Materias\UFSC\20201\Lab_EBD_ECL\Perpeptron\NN_Neuron_unsigned_no_components_generic_inputs_python\text_files\saidas_tb.txt",  write_mode);
+			file_open(output_buf, "C:\Users\luisa\Documents\Materias\UFSC\20201\Lab_EBD_ECL\Perpeptron\NN_Neuron_unsigned_no_components_generic_inputs_python_ROM\text_files\saidas_tb.txt",  write_mode);
 			wait until reset = '0'; -- espera reset desligar
-      
-      --LEITURA SIGMOIDE
-			while not endfile (sigmoid_buf) loop
-				readline(sigmoid_buf, read_col_from_sigmoid_buf); --lÃª_linha buffer primeira linha -> escreve na variÃ¡vel
-				
-				read(read_col_from_sigmoid_buf, val_address); -- pega endereço
-				read(read_col_from_sigmoid_buf, val_SPACE);           -- read in the space character
-				read(read_col_from_sigmoid_buf, val_datain); -- pega valor da sigmoide
-				
-				-- Pass the read values to signals
-				bias<= std_logic_vector(val_address);
-				datain<= std_logic_vector(val_datain);
-				
-			wait for clk_period;
-			end loop;
 						
 			--LEITURA ENTRADA E ESCRITA NO ARQUIVO DE SAÍDA----
 			while not endfile(input_buf) loop --enquanto arquivo nÃ£o terminar de ler
